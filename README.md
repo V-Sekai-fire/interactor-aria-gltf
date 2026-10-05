@@ -1,28 +1,18 @@
-# ARIA glTF
+# interactor-aria-gltf
 
-glTF 2.0 processing library with joint hierarchy management and inverse kinematics.
+An Elixir umbrella that reads and processes glTF 2.0 assets, manages joint hierarchies, and solves inverse kinematics over them.
 
-## Structure
+## What it is for
 
-This is an umbrella project containing:
+Its applications cover glTF processing, joint transform hierarchies, and an Entirely Wahba's-problem Based Inverse Kinematics solver with kusudama joint limits, built on the aria math library and Nx.
 
-- **aria_gltf**: Core glTF 2.0 parsing, validation, and processing
-- **aria_joint**: Transform hierarchy management for joints/bones
-- **aria_ewbik**: Entirely Wahba's-problem Based Inverse Kinematics solver
+## Building and running
 
-## Dependencies
-
-- `aria_math`: From GitHub (https://github.com/V-Sekai-fire/aria-math.git)
-
-## Setup
-
-```bash
+```sh
 mix deps.get
-mix compile
-```
-
-## Testing
-
-```bash
 mix test
 ```
+
+## Licence
+
+MIT, as the SPDX headers and the Mix package metadata declare. There is no LICENSE file, and the vendored solver reference inside the inverse-kinematics application keeps its own licence.
