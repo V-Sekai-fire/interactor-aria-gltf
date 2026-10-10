@@ -15,4 +15,4 @@ mix test
 
 ## Licence
 
-MIT, as the SPDX headers and the Mix package metadata declare. There is no LICENSE file, and the vendored solver reference inside the inverse-kinematics application keeps its own licence.
+MIT. See [LICENSE](LICENSE).
